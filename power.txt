@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  tasks:
+     - name: Execute command 'date'
+      command: date
+
+     - name: Excute shell scripte on server
+       screpte: sample.sh
+
+      - name: Install httpd service
+        yum:
+	   name: httpd
+	   state: present
+
+      - name: start web server
+        service:
+	   name: httpd
+	   state: started

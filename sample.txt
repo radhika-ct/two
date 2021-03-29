@@ -7,4 +7,7 @@
       content: 
         radhika gali
 	vitta lapuram
+        main
+	potrate
+	prodect
 

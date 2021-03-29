@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  tasks:
+     - name: Execute command 'date'
+       command: date
+
+     - name: Execute script on server
+       script: test_script.sh
+
+     - name: Insatll httpd service
+       yum:
+          name: httpd
+	  state: present
+
+     - name: start web server
+       service: 
+          name: httpd
+	  state: started
+
